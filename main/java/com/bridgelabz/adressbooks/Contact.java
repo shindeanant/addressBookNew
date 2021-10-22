@@ -5,7 +5,7 @@ public class Contact {
 	private String lastName;
 	private String address;
 	private String city;
-	private String state;
+	private String state;;
 	private String zipCode;
 	private String number;
 	private String email;
@@ -20,7 +20,6 @@ public class Contact {
 		this.zipCode = zipCode;
 		this.number = number;
 		this.email = email;
-
 	}
 
 	@Override

@@ -31,7 +31,7 @@ public class AddressBookMain {
 			System.out.print("Choose what you want to do -> ");
 			int choose = scanner.nextInt();
 			switch (choose) {
-			case 1 : {
+			case 1: {
 				System.out.print("\nEnter the name of address book => ");
 				String addressBookName = scanner.next();
 
@@ -49,22 +49,22 @@ public class AddressBookMain {
 							"1. = Add Contacts\n2. = Display Contact\n3. = Edit Contact\n4. = Delete\n5. = Exit\nEnter Your Choice: ");
 					int choice = scanner.nextInt();
 					switch (choice) {
-					case 1: 
-					createContact(newContactList);
-					case 2 : 
-					read(newContactList);
-					case 3: 
-					update(newContactList);
-					case 4 : 
-					delete(newContactList);
-					case 5 : 
-					ch = 1;
-					default: 
-					System.out.println("Plz Enter 1 or 2 or 3 0r 4 only");
+					case 1:
+						createContact(newContactList);
+					case 2:
+						read(newContactList);
+					case 3:
+						update(newContactList);
+					case 4:
+						delete(newContactList);
+					case 5:
+						ch = 1;
+					default:
+						System.out.println("Plz Enter 1 or 2 or 3 0r 4 only");
 					}
 				}
 			}
-			case 2 : {
+			case 2: {
 				System.out.print("Enter the name of address book: ");
 				String addressBookNameOld = scanner.next();
 				if (addressBook.containsKey(addressBookNameOld)) {
@@ -75,18 +75,18 @@ public class AddressBookMain {
 								"1. = Add Contacts\n2. = Display Contact\n3. = Edit Contact\n4. = Delete\n5. = Exit\nEnter Your Choice: ");
 						int choice = scanner.nextInt();
 						switch (choice) {
-						case 1 :
-						createContact(contactList);
-						case 2 :
-						read(contactList);
-						case 3 : 
-						update(contactList);
-						case 4 : 
-						delete(contactList);
-						case 5 : 
-						ch = 1;
+						case 1:
+							createContact(contactList);
+						case 2:
+							read(contactList);
+						case 3:
+							update(contactList);
+						case 4:
+							delete(contactList);
+						case 5:
+							ch = 1;
 						default:
-						System.out.println("Plz Enter 1 or 2 or 3 0r 4 only");
+							System.out.println("Plz Enter 1 or 2 or 3 0r 4 only");
 						}
 						addressBook.put(addressBookNameOld, contactList);
 					}
@@ -94,9 +94,10 @@ public class AddressBookMain {
 					System.out.println("Enter valid address book name");
 				}
 			}
-			case 3 : System.out.println(addressBook);
+			case 3:
+				System.out.println(addressBook);
 
-			case 4 : {
+			case 4: {
 				System.out.print("Enter Name of book you want to remove. => ");
 				String removeBookName = scanner.next();
 				if (addressBook.containsKey(removeBookName)) {
@@ -110,7 +111,8 @@ public class AddressBookMain {
 				System.out.println("\n\nthanks for visiting.......\n");
 				flag = 1;
 			}
-			default : System.out.println("enter valid option please");
+			default:
+				System.out.println("enter valid option please");
 			}
 		}
 	}
@@ -194,8 +196,7 @@ public class AddressBookMain {
 		String address = scanner.nextLine();
 
 		System.out.print("Enter City: ");
-		String city = scanner.nextLine();
-
+		String city = scanner.nextLine();;
 		System.out.print("Enter State: ");
 		String state = scanner.nextLine();
 
